@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--Candy Nohemi Velazco Mendiola
+    20490742
+    Programacion Web -->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lexend&family=Lily+Script+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <script type="text/javascript" src="validaciones.js" ></script>
+        <h1>Formulario de Registro</h1>
+
+        <form id="theForm" method="get" action="mailto:a2049072@itmexicali.edu.mx">
+            <div class="form-group">
+                <label for="name">Nombre<span class="red">*</span></label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Apellidos<span class="red">*</span></label>
+                <input type="text" id="lastName" name="lastName">
+                <span id="lastError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Edad<span class="red">*</span></label>
+                <input type="number" id="age" name="age" min="1" max="120">
+                <span id="ageError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address">
+                <span id="addressError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="zipcode">Código Postal<span class="red">*</span></label>
+                <input type="text" id="zipcode" name="zipcode">
+                <span id="zipcodeError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="country">País<span class="red">*</span></label>
+                <select id="country" name="country">
+                    <option value="" selected>Selecciona...</option>
+                    <option value="México">México</option>
+                    <option value="Estados_Unidos">Estados Unidos</option>
+                    <option value="Canáda">Canáda</option>
+                    <option value="Italia">Italia</option>
+                    <option value="España">España</option>
+                    <option value="Inglaterra">Inglaterra</option>
+                </select>
+                <span id="countryError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Género<span class="red">*</span></label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Masculino</label>
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Femenino</label>
+                </div>
+                <span id="genderError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Lenguaje Favorito<span class="red">*</span></label>
+                <div>
+                    <input type="checkbox" id="html_" name="leng" value="h">
+                    <label for="html_">HTML</label>
+                    <input type="checkbox" id="css_" name="leng" value="c">
+                    <label for="css_">CSS</label>
+                    <input type="checkbox" id="js_" name="leng" value="j">
+                    <label for="js_">JavaScript</label>
+                </div>
+                <span id="lengError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Teléfono<span class="red">*</span></label>
+                <input type="tel" id="phone" name="phone">
+                <span id="phoneError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico<span class="red">*</span></label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña (6-8 caracteres)<span class="red">*</span></label>
+                <input type="password" id="password" name="password">
+                <span id="passwordError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="pwVerified">Verificar Contraseña<span class="red">*</span></label>
+                <input type="password" id="pwVerified" name="pwVerified">
+                <span id="pwVerifiedError" class="red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comentarios</label>
+                <textarea id="comments" name="comments"></textarea>
+                <span id="commentsError" class="red"></span>
+            </div>
+
+            <center>
+                <div class="form-group">
+                    <input type="submit" value="Enviar" id="submit">
+                    <input type="reset" value="Limpiar" id="reset">
+                </div>
+            </center>
+        </form>
+    </body>
+</html>
